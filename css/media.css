@@ -1,0 +1,9 @@
+@media screen and (max-width: 1169px){
+    .logo_box .logotype{
+        margin: 0;
+        padding: 0 8%;
+    }
+}
+@media screen and (max-width: 430px){
+
+}
