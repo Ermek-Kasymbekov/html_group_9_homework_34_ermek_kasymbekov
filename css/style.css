@@ -162,6 +162,7 @@ header .btn{
 	margin: 31px 0 0 84px;
 	display: flex;
 	align-items: center;
+	line-height: 18px;
 }
 .client a span{
 	font-weight: 300;
