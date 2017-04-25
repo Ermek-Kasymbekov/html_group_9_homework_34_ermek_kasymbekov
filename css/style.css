@@ -88,34 +88,12 @@ header .btn{
 	background: #f8f9fa;
 }
 .logo_box{
-	padding: 75px 0 68px 0;
-	margin-left: 19px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
 }
-.logo_box .logotype{
-	display: inline-block;
-	width: 80px;
-	height: 32px;
-	background: url("../img/sprite.png") 0 0 no-repeat;
-}
-.logo_box .adobe{
-	background-position: 0 -34px;
-	margin-left: 127px;
-}
-.logo_box .google{
-	background-position: 0 -77px;
-	margin-left: 132px;
-}
-.logo_box .facebook{
-	background-position: 0 -122px;
-	margin-left: 130px;
-}
-.logo_box .spotify{
-	background-position: 0 -166px;
-	margin-left: 129px;
-}
-.logo_box .nike{
-	background-position: 0 -212px;
-	margin-left: 128px;
+.logotype{
+	padding: 30px 61px;
 }
 .clients{
 	margin: 103px 0 0 -3px;
@@ -156,30 +134,37 @@ header .btn{
 	text-decoration: none;
 	position: relative;
 	margin: 31px 0 0 84px;
+	display: flex;
+	align-items: center;
 }
 .client a span{
 	font-weight: 300;
 }
-.client .pavlik:before{
-	content: '';
-	display: inline-block;
-	width: 65px;
-	height: 65px;
-	position: absolute;
-	top: -21px;
-	left: -84px;
-	background: url(../img/pavliv.png) 0 0 no-repeat;
+.client img{
+	border-radius: 50%;
+	margin-right: 10px;
+
 }
-.client .john:before{
-	content: '';
-	display: inline-block;
-	width: 65px;
-	height: 65px;
-	position: absolute;
-	top: -21px;
-	left: -84px;
-	background: url("../img/john.png") 0 0 no-repeat;
-}
+/*.client .pavlik:before{*/
+	/*content: '';*/
+	/*display: inline-block;*/
+	/*width: 65px;*/
+	/*height: 65px;*/
+	/*position: absolute;*/
+	/*top: -21px;*/
+	/*left: -84px;*/
+	/*background: url(../img/pavliv.png) 0 0 no-repeat;*/
+/*}*/
+/*.client .john:before{*/
+	/*content: '';*/
+	/*display: inline-block;*/
+	/*width: 65px;*/
+	/*height: 65px;*/
+	/*position: absolute;*/
+	/*top: -21px;*/
+	/*left: -84px;*/
+	/*background: url("../img/john.png") 0 0 no-repeat;*/
+/*}*/
 .form-block{
 	text-align: center;
 	width: 38%;
@@ -231,15 +216,15 @@ header .btn{
 }
 .form-block input[type="submit"]{
 	display: block;
-	width: 455px;
+	width: 88%;
 	border-radius: 5px;
 	font-size: 17px;
-	padding: 25px 190px;
+	padding: 25px 0;
 	margin: 27px auto 40px;
 	background: #36aeea;
 	color: #fff;
 	text-transform: uppercase;
-	border:none;
+	border: none;
 	font-weight: 700;
 	letter-spacing: 1px;
 }
@@ -272,6 +257,9 @@ header .btn{
 }
 .form-block input.valid~.check{
 	display: block;
+}
+.fancybox-close-small{
+	display: none;
 }
 footer{
 	position: relative;
