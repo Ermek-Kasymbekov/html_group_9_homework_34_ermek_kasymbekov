@@ -36,6 +36,12 @@ header li a{
 	float: left;
 	margin: -5px 60px 0 37px;
 }
+.logo a{
+	display: block;
+	width: 121px;
+	height: 27px;
+	background: url(../img/logo2.png) 0 0 no-repeat;
+}
 header .btn{
 	float: right;
 	border: 3px solid #36aeea;
@@ -55,6 +61,26 @@ header .btn{
 	width: 100%;
 	background: rgba(255, 255, 255, 0.8);
 	box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.8);
+}
+.top_menu.fixed {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	background: #95a5ad;
+	z-index: 200;
+}
+.top_menu.fixed .btn{
+	color: #ffffff;
+	border-color: #ffffff;
+}
+.top_menu.fixed li a{
+	color: #ffffff;
+}
+.top_menu.fixed li:hover a{
+	border-bottom: 2px solid #ffffff;
+}
+.top_menu.fixed .logo a{
+	background-position: 0 -34px;
 }
 .banner img{
 	width: 100%;
