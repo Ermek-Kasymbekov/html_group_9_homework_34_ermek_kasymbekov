@@ -1,7 +1,6 @@
 $(document).ready(function(){
     $("[data-fancybox]").fancybox({});
 
-
     $(window).scroll(function(){
         if ($(this).scrollTop() > $('header').height()) {
             $('.top_menu').addClass('fixed');
@@ -10,18 +9,13 @@ $(document).ready(function(){
         }
     });
 
-
-
     $("#menu").on("click","a", function (event) {
         event.preventDefault();
         var id  = $(this).attr('href'),
             top = $(id).offset().top;
-        console.log(id);
-        console.log(top);
+
         $('body,html').animate({scrollTop: top - $('#top_menu').height()}, 1500);
     });
-
-
 
     $('#menu-btn').click(function(){
         $('.menu').slideToggle(700);
@@ -33,13 +27,8 @@ $(document).ready(function(){
             },600)
         }
     });
-
-
-
 });
 
-
-// lToAnchor('id3');
 
 
 
