@@ -82,6 +82,39 @@ header .btn{
 .top_menu.fixed .logo a{
 	background-position: 0 -34px;
 }
+
+.menu-btn{
+	width: 70px;
+	height: 70px;
+	float: right;
+	background: #1ac7c3;
+	position: relative;
+	cursor: pointer;
+}
+.menu-btn span{
+	width: 18px;
+	height: 2px;
+	background: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -1px 0 0 -9px;
+}
+.menu-btn span::before,.menu-btn span::after{
+	content: "";
+	width: 18px;
+	height: 2px;
+	background: #fff;
+	position: absolute;
+	left: 0;
+}
+.menu-btn span::before{
+	top: -5px;
+}
+.menu-btn span::after{
+	bottom: -5px;
+}
+
 .banner img{
 	width: 100%;
 	height: auto;
@@ -172,31 +205,11 @@ header .btn{
 	margin-right: 10px;
 
 }
-/*.client .pavlik:before{*/
-	/*content: '';*/
-	/*display: inline-block;*/
-	/*width: 65px;*/
-	/*height: 65px;*/
-	/*position: absolute;*/
-	/*top: -21px;*/
-	/*left: -84px;*/
-	/*background: url(../img/pavliv.png) 0 0 no-repeat;*/
-/*}*/
-/*.client .john:before{*/
-	/*content: '';*/
-	/*display: inline-block;*/
-	/*width: 65px;*/
-	/*height: 65px;*/
-	/*position: absolute;*/
-	/*top: -21px;*/
-	/*left: -84px;*/
-	/*background: url("../img/john.png") 0 0 no-repeat;*/
-/*}*/
 .form-block{
 	text-align: center;
 	width: 38%;
 	border-radius: 5px;
-	margin: 156px 0 0 421px;
+	margin: 156px auto 50px;
 	background: -webkit-linear-gradient(#d1d7db 0%, #79a0a9 100%, #2989d8 100%, #207cca 100%, #7db9e8 100%, #79a0a9 100%);
 	background: linear-gradient(#d1d7db 0%, #79a0a9 100%, #2989d8 100%, #207cca 100%, #7db9e8 100%, #79a0a9 100%);
 }
